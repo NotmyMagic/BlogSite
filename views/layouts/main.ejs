@@ -3,9 +3,18 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <meta name="description" content="<%= locals.description %>" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title><%= locals.title %></title>
   </head>
   <body>
-    Hello World
+    <%-include("../partials/search.ejs")%>
+    <div class="container">
+      <%-include("../partials/header.ejs")%>
+      <main class="main"><%- body %></main>
+      <%-include("../partials/footer.ejs")%>
+    </div>
+
+    <script type="text/javascript" defer src="/js/script.js"></script>
   </body>
 </html>
