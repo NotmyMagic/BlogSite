@@ -29,8 +29,8 @@
 
   <!-- if prevPage is 1 then go to / -->
   <% } %> <% if(prevPage >= 1) { %> <% if(prevPage === 1) { %>
-  <a href="/" class="pagination-newer">View Newer Posts &gt;</a>
+  <a href="/" class="pagination">View Newer Posts &gt;</a>
   <% } else { %>
-  <a href="/?page=<%= prevPage %>" class="pagination-newer">View Newer Posts</a>
+  <a href="/?page=<%= prevPage %>" class="pagination">View Newer Posts</a>
   <% } %> <% } %>
 </section>
